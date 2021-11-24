@@ -8,11 +8,11 @@ print("Welcome to calcpy!, a simple calculator made in python.")
 
 fileName = input("\nFirst of all, select a name for the history archive; press Enter if you want history.txt: ")
 if fileName == "":
-    file = open("/home/m4luk0/PycharmProjects/Calculator/history.txt", "a+")
-    fileName = "/home/m4luk0/PycharmProjects/Calculator/history.txt"
+    file = open("./history.txt", "a+")
+    fileName = "./history.txt"
     file.close()
 else:
-    file = open("/home/m4luk0/PycharmProjects/Calculator/" + fileName, "a+")
+    file = open("./" + fileName, "a+")
     file.close()
 
 
